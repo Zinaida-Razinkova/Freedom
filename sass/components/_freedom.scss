@@ -1,0 +1,62 @@
+.freedom {
+    text-align: center;
+    background-color: $bg-2;
+    background-image: linear-gradient(rgba(31, 35, 39), rgba(31, 35, 39, 0.6)), url('../images/img03.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.freedom__title,
+.freedom__paragraph,
+.freedom__button {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.freedom__text {
+    margin-bottom: 5px;
+}
+
+.freedom__title {
+    margin-bottom: 10px;
+}
+
+.freedom__paragraph {
+    margin-bottom: 30px;
+}
+
+// Animation elements
+
+.freedom__text,
+.freedom__title,
+.freedom__paragraph,
+.freedom__button {
+    transform: translate(0px, 100%);
+    opacity: 0;
+}
+
+.freedom__text._active,
+.freedom__title._active,
+.freedom__paragraph._active,
+.freedom__button._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.freedom__text._active {
+    transition-delay: 0.5s;
+}
+
+.freedom__title._active {
+    transition-delay: 1s;
+}
+
+.freedom__paragraph._active {
+    transition-delay: 1.5s;
+}
+
+.freedom__button._active {
+    transition-delay: 2s;
+}

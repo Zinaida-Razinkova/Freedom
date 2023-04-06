@@ -1,0 +1,29 @@
+.button {
+    display: inline-block;
+    padding: 20px;
+
+    background-color: #E11B19;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    &:hover,
+    &:focus {
+        background-color: #82100e;
+        transition: background-color 0.5s;
+    }
+}
+
+.button span {
+    display: block;
+    padding-right: 35px;
+    background: url('../images/icon08.svg') right no-repeat;
+}

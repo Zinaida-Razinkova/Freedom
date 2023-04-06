@@ -1,0 +1,62 @@
+.footer {
+    background-color: $bg-3;
+}
+
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__logo {
+    width: 143px;
+}
+
+.footer__social {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer__social-img {
+    width: 30px;
+}
+
+.footer__link {
+    cursor: pointer;
+}
+
+.footer__list {
+    scale: 1;
+    transition: scale 0.2s;
+
+    &:hover,
+    &:focus {
+        scale: 1.2;
+        transition: scale 0.5s;
+    }
+}
+
+// Animation elements
+
+.footer__logo {
+    transform: translate(-100%, 0px);
+    opacity: 0;
+}
+
+.footer__social {
+    transform: translate(100%, 0px);
+    opacity: 0;
+}
+
+.footer__logo._active,
+.footer__social._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.footer__logo._active,
+.footer__social._active {
+    transition-delay: 0.5s;
+}

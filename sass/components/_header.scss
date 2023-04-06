@@ -1,0 +1,29 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    height: 88px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @media screen and (max-width: 1024px) {
+        height: 60px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+// Animation elements
+
+.header__logo {
+    transform: translate(0px, -200%);
+    opacity: 0;
+}
+
+.header__logo._active {
+    transform: translate(0px, 0px);
+    transition: all 0.5s ease 0.5s;
+    opacity: 1;
+}
