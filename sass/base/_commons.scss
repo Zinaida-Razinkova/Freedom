@@ -40,6 +40,11 @@ a {
     text-decoration: none;
 }
 
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+}
+
 .container {
     max-width: 1140px;
     margin-left: auto;
