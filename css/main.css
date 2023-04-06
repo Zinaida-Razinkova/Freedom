@@ -17,7 +17,7 @@
 }
 
 .header__logo {
-  transform: translate(0px, -200%);
+  transform: translate(0px, -100%);
   opacity: 0;
 }
 
